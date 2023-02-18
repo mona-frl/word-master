@@ -116,7 +116,7 @@ img {
 /* keyboard stuff */
 
 .keyboard {
-    max-width: 27rem;
+    max-width: 30rem;
     width: 100%;
     margin: 1px auto;
 }
@@ -131,8 +131,8 @@ img {
     background-color: #818384;
     color: #ece8e8;
     margin: 1px 1px 5px;
-    height: 2.5rem;
-    width: 1.5rem;
+    height: 3rem;
+    width: 1.8rem;
     font-size: 1rem;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial;
