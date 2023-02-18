@@ -1,0 +1,262 @@
+/* general stuff */
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #1f1e1e;
+    color: #fff;
+}
+
+.wrapper-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* header */
+h1 {
+    margin: 0.3125rem;
+}
+
+hr {
+    border-color: #696969;
+}
+
+/* body content */
+main {
+    flex: 1;
+    margin: 0.9rem auto 0;
+}
+
+/* loading  */
+.loader {
+    visibility: hidden;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1rem;
+}
+
+.show {
+    visibility: visible;
+}
+
+/* popup stuff */
+.popup {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-text {
+    visibility: hidden;
+    width: 160px;
+    color: #696969;
+    background-color: #eceaea;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: auto;
+    left: auto;
+    margin-left: -80px;
+}
+
+.visible {
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;}
+        to { opacity: 1;}
+    }
+
+
+/* letter box stuff */
+.letters {
+    max-width: 16rem;
+    margin: 1px auto;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(6, auto);
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-bottom: 5px;
+}
+
+.letter-box {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #a1a0a069;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* keyboard stuff */
+
+.keyboard {
+    max-width: 27rem;
+    width: 100%;
+    margin: 1px auto;
+}
+
+.keyboard .first-row {
+    margin-top: 1rem;
+}
+
+.keyboard-letters {
+    border-style: none;
+    border-radius: 0.5rem;
+    background-color: #818384;
+    color: #ece8e8;
+    margin: 1px 1px 5px;
+    height: 3rem;
+    width: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.Enter {
+    width: 6rem;
+}
+
+.Backspace {
+    width: 3rem;
+}
+
+.pressed {
+    background-color: #bebbbb
+}
+
+/* animation */
+
+.correct {
+    border-color: transparent;
+    background-color: #6AAA64;
+}
+
+.wrong {
+    border-color: transparent;
+    background-color: #3A3A3C;
+}
+
+.misplaced {
+    border-color: transparent;
+    background-color: #C9B458;
+}
+
+.invalid {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translate(-6px);
+    }
+
+    3% {
+        transform: translate(6px);
+    }
+
+    7% {
+        transform: translate(-6px)
+    }
+
+    10% {
+        transform: translate(6px)
+    }
+}
+
+
+/* footer stuff */
+.footer-container {
+    font-weight: 200;
+    height: 80px;
+    margin: 10px 0 0;
+    padding: 15px;
+    background-color: #1f1e1e;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-text {
+    color: #ece8e8;
+    font-size: 14px;
+}
+
+.footer-icon {
+    color: #ece8e8;
+    padding-right: 7px;
+}
+
+.footer-icon:hover {
+    color: #dddddd;
+}
+
+.footer-icon:active {
+    color: #696969
+}
+
+
+/* Tweaking the design cause screen sizes */
+
+@media(max-width:400px) {
+    .keyboard-letters {
+        width: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    .enter {
+        width: 2.8rem;
+    }
+
+    .backspace {
+        width: 1.5rem;
+    }
+}
+
+@media(max-width:436px) {
+    .enter {
+        width: 4rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .letter-box {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.5rem;
+    }
+
+    .keyboard-letters {
+        width: 1rem;
+    }
+
+    .enter {
+        overflow: hidden;
+        width: 1.5rem;
+    }
+
+    .backspace {
+        width: 1.5rem;
+    }
+}

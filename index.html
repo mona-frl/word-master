@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <met viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Word Master</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./src/style.css">
+
+        <script src="https://kit.fontawesome.com/e52ce75e6d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <header>
+            <h1>
+                Word Master
+            </h1>
+            <hr>
+        </header>
+
+        <main>
+            <div class="loader show popup">
+                <div>
+                    <span> <img src="./images/loading.gif" alt="loading"></span>
+                    <span class="popup-text inv-size">Not enough letters</span>
+                    <span class="popup-text inv-word">Invalid word</span>
+                    <span class="popup-text win">You win! 😊</span>
+                    <span class="popup-text lose">No attempts left. 😞<br> The word was <u><span
+                                id="word"></span></u>.</span>
+                </div>
+            </div>
+
+
+            <div class="letters grid">
+                <div class="letter-box letter-0"></div>
+                <div class="letter-box letter-1"></div>
+                <div class="letter-box letter-2"></div>
+                <div class="letter-box letter-3"></div>
+                <div class="letter-box letter-4"></div>
+                <div class="letter-box letter-5"></div>
+                <div class="letter-box letter-6"></div>
+                <div class="letter-box letter-7"></div>
+                <div class="letter-box letter-8"></div>
+                <div class="letter-box letter-9"></div>
+                <div class="letter-box letter-10"></div>
+                <div class="letter-box letter-11"></div>
+                <div class="letter-box letter-12"></div>
+                <div class="letter-box letter-13"></div>
+                <div class="letter-box letter-14"></div>
+                <div class="letter-box letter-15"></div>
+                <div class="letter-box letter-16"></div>
+                <div class="letter-box letter-17"></div>
+                <div class="letter-box letter-18"></div>
+                <div class="letter-box letter-19"></div>
+                <div class="letter-box letter-20"></div>
+                <div class="letter-box letter-21"></div>
+                <div class="letter-box letter-22"></div>
+                <div class="letter-box letter-23"></div>
+                <div class="letter-box letter-24"></div>
+                <div class="letter-box letter-25"></div>
+                <div class="letter-box letter-26"></div>
+                <div class="letter-box letter-27"></div>
+                <div class="letter-box letter-28"></div>
+                <div class="letter-box letter-29"></div>
+            </div>
+
+            <div id="keyboard-container" class="keyboard">
+                <div class="keyboard first-row">
+                    <button class="keyboard-letters Q" id="Q">Q</button>
+                    <button class="keyboard-letters W" id="W">W</button>
+                    <button class="keyboard-letters E" id="E">E</button>
+                    <button class="keyboard-letters R" id="R">R</button>
+                    <button class="keyboard-letters T" id="T">T</button>
+                    <button class="keyboard-letters Y" id="Y">Y</button>
+                    <button class="keyboard-letters U" id="U">U</button>
+                    <button class="keyboard-letters I" id="I">I</button>
+                    <button class="keyboard-letters O" id="O">O</button>
+                    <button class="keyboard-letters P" id="P">P</button>
+                </div>
+                <div class="keyboard second-row">
+                    <button class="keyboard-letters A" id="A">A</button>
+                    <button class="keyboard-letters S" id="S">S</button>
+                    <button class="keyboard-letters D" id="D">D</button>
+                    <button class="keyboard-letters F" id="F">F</button>
+                    <button class="keyboard-letters G" id="G">G</button>
+                    <button class="keyboard-letters H" id="H">H</button>
+                    <button class="keyboard-letters J" id="J">J</button>
+                    <button class="keyboard-letters K" id="K">K</button>
+                    <button class="keyboard-letters L" id="L">L</button>
+                </div>
+
+                <div class="keyboard third-row">
+                    <button class="keyboard-letters Enter" id="Enter">ENTER</button>
+                    <button class="keyboard-letters Z" id="Z">Z</button>
+                    <button class="keyboard-letters X" id="X">X</button>
+                    <button class="keyboard-letters C" id="C">C</button>
+                    <button class="keyboard-letters V" id="V">V</button>
+                    <button class="keyboard-letters B" id="B">B</button>
+                    <button class="keyboard-letters N" id="N">N</button>
+                    <button class="keyboard-letters M" id="M">M</button>
+                    <button class="keyboard-letters Backspace" id="Backspace">DEL</button>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer class="footer-container">
+            <p class="footer-text">Made by Mona with 💜</p>
+            <a class="footer-icon" href="mailto:monalisadehaan@gmail.com"><i class="fa-solid fa-l fa-envelope"></i></a>
+            <a class="footer-icon" href="https://www.linkedin.com/in/mona-frl" target="_blank"><i
+                    class="fa-brands fa-l fa-linkedin"></i></a>
+            <a class="footer-icon" href="https://github.com/mona-frl" target="_blank"><i
+                    class="fa-brands fa-l fa-github"></i></a>
+        </footer>
+
+
+        <script src="./src/app.js"></script>
+    </div>
+
+
+</body>
+
+</html>
