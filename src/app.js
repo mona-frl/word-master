@@ -126,8 +126,10 @@ async function addWordHandler() {
         if (guessParts[i] === wordParts[i]) {
             //keyboard marking
             let target = guessParts[i].toUpperCase();
+            document.getElementById(target).classList.remove('misplaced');
             document.getElementById(target).classList.add('correct');
             //adds the animation of correct to the right letter
+
             letters[currentRow * ANSWER_LENGTH + i].classList.add('correct');
 
             //lowers the number on the map so it doesn't give a misplaced animation in other letters, let's say if we have the word "pound", if we say "pools" it will only highlight the first o.
@@ -191,7 +193,6 @@ async function getWord() {
     const data = await response.json();
     word = data.word;
     wordParts = word.split('');
-
     isLoading = false;
     loadingHandler(isLoading)
 }

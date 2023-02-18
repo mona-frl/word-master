@@ -75,9 +75,13 @@ img {
 
 @keyframes fadeIn {
     from {
-        opacity: 0;}
-        to { opacity: 1;}
+        opacity: 0;
     }
+
+    to {
+        opacity: 1;
+    }
+}
 
 
 /* letter box stuff */
@@ -89,7 +93,7 @@ img {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(6, auto);
     row-gap: 5px;
     column-gap: 5px;
@@ -127,8 +131,8 @@ img {
     background-color: #818384;
     color: #ece8e8;
     margin: 1px 1px 5px;
-    height: 3rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 1.5rem;
     font-size: 1rem;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial;
@@ -139,7 +143,7 @@ img {
 }
 
 .Backspace {
-    width: 3rem;
+    width: 2.7rem;
 }
 
 .pressed {
@@ -147,11 +151,6 @@ img {
 }
 
 /* animation */
-
-.correct {
-    border-color: transparent;
-    background-color: #6AAA64;
-}
 
 .wrong {
     border-color: transparent;
@@ -161,6 +160,11 @@ img {
 .misplaced {
     border-color: transparent;
     background-color: #C9B458;
+}
+
+.correct {
+    border-color: transparent;
+    background-color: #6AAA64;
 }
 
 .invalid {
@@ -216,5 +220,3 @@ img {
 .footer-icon:active {
     color: #696969
 }
-
-
