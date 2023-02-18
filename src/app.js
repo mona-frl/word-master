@@ -209,23 +209,23 @@ function keyAnimation(target) {
 
 function popUpWin() {
     document.querySelector('.win').classList.add('visible')
-    setTimeout(() => document.querySelector('.win').classList.remove('visible'), 1000000);
+    setTimeout(() => document.querySelector('.win').classList.remove('visible'), 100000000);
 }
 
 function popUpLoss() {
     document.querySelector('#word').innerHTML = word;
     document.querySelector('.lose').classList.add('visible')
-    setTimeout(() => document.querySelector('.lose').classList.remove('visible'), 1000000);
+    setTimeout(() => document.querySelector('.lose').classList.remove('visible'), 100000000);
 }
 
 function popUpInvalidSize() {
     document.querySelector('.inv-size').classList.add('visible')
-    setTimeout(() => document.querySelector('.inv-size').classList.remove('visible'), 500);
+    setTimeout(() => document.querySelector('.inv-size').classList.remove('visible'), 1000);
 }
 
 function popUpInvalidWord() {
     document.querySelector('.inv-word').classList.add('visible')
-    setTimeout(() => document.querySelector('.inv-word').classList.remove('visible'), 500);
+    setTimeout(() => document.querySelector('.inv-word').classList.remove('visible'), 1000);
 }
 
 function highLight() {
