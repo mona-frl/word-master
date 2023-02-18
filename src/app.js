@@ -1,4 +1,4 @@
-const wordOfDayURL = 'https://words.dev-apis.com/word-of-the-day'
+const wordOfDayURL = 'https://words.dev-apis.com/word-of-the-day?random=1'
 const validWordURL = 'https://words.dev-apis.com/validate-word'
 const letters = document.querySelectorAll('.letter-box');
 const loadingDiv = document.querySelector('.loader');
